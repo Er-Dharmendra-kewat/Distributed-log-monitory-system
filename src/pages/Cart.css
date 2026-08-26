@@ -1,0 +1,179 @@
+.cart-container {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 30px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.cart-item {
+  background: white;
+
+  border: 1px solid #e6e9ef;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.cart-item strong {
+  margin-left: auto;
+}
+
+.cart-icon {
+  width: 60px;
+  height: 60px;
+
+  background: #f0f3f9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  font-size: 28px;
+}
+
+.cart-item p {
+  color: #8a91a0;
+
+  font-size: 13px;
+
+  margin-top: 5px;
+}
+
+.order-summary {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  height: fit-content;
+
+  border: 1px solid #e6e9ef;
+}
+
+.order-summary h2 {
+  margin-bottom: 25px;
+}
+
+.summary-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 15px 0;
+
+  color: #697386;
+}
+
+.total {
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 20px;
+
+  margin: 20px 0;
+}
+
+.checkout-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #1e9b60;
+
+  color: white;
+
+  font-weight: bold;
+}
+
+
+/* ================= EMPTY ================= */
+
+.empty {
+  background: white;
+
+  text-align: center;
+
+  padding: 80px;
+
+  border-radius: 15px;
+}
+
+.empty div {
+  font-size: 50px;
+
+  margin-bottom: 20px;
+}
+
+.empty p {
+  color: #7d8696;
+
+  margin: 10px 0 25px;
+}
+
+
+/* ================= QUANTITY CONTROLS ================= */
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-controls button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #dfe3ec;
+  background: #f5f7fb;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.qty-controls button:hover {
+  background: #e9ecf5;
+}
+
+.qty-controls span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #b3382c;
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+.remove-btn:hover {
+  color: #7a231a;
+}
+
+.checkout-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
