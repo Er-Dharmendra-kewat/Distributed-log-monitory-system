@@ -16,7 +16,7 @@ function Products() {
         <div className="service-status">🟢 Product Service Online</div>
       </div>
 
-      <ProductGrid products={products} onAdd={addToCart} />
+      
     </section>
   )
 }
